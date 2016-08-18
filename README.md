@@ -2,6 +2,8 @@ A lightweight VM with SQL Server 2014 Express
 
 Note: If you just need Windows Hyper-V Server 2012 R2 and do not need SQL Server Express, then you might want to check out https://github.com/msabramo/vagrant_hyperv_server_free instead.
 
+This fork just adds create db command plus couple of useful settings.
+
 # Prerequisites
 
 - [Vagrant][]
@@ -123,6 +125,14 @@ do it by adding PowerShell commands to the `Vagrantfile` or use ansible (which c
 also send PowerShell commands over WinRM), etc.
 - To see the list of services that are running, you can do `net start` from the
 command prompt or PowerShell.
+
+# Hybris DB Settings
+
+db.url=jdbc:sqlserver://localhost:1433;instance=MSSQLSERVER;databaseName=hybris
+db.driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+db.username=vagrant
+db.password=vagrant
+db.tableprefix=
 
 [Vagrant]: https://www.vagrantup.com/
 [VirtualBox]: https://www.virtualbox.org/
