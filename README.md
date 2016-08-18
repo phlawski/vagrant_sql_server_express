@@ -128,11 +128,13 @@ command prompt or PowerShell.
 
 # Hybris DB Settings
 
+```
 db.url=jdbc:sqlserver://localhost:1433;instance=MSSQLSERVER;databaseName=hybris
 db.driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
 db.username=vagrant
 db.password=vagrant
 db.tableprefix=
+```
 
 [Vagrant]: https://www.vagrantup.com/
 [VirtualBox]: https://www.virtualbox.org/
